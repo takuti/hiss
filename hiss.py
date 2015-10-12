@@ -80,9 +80,9 @@ def say(text):
     else: click.echo('Faild.')
 
 @cli.command()
-@click.option('--count', '-n', default=5, help='Number of tweets.')
+@click.option('--count', '-n', default=10, help='Number of tweets.')
 def head(count):
-    """Display the latest 5 tweets on your timeline like `head` command.
+    """Display the latest tweets on your timeline like `head` command. (default: 10)
     """
     import json
 
